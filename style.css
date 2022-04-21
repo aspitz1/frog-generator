@@ -1,0 +1,73 @@
+*, *::before, *::after {
+  font-family: monospace;
+}
+body, html {
+  background: linear-gradient(#ff97c4, 20%, #b5e8a4);
+  min-height: 100vh;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr);
+  grid-gap: 10px;
+  margin: 10px;
+}
+.title {
+  grid-column: 1 / 4;
+  grid-row: 1;
+  text-align: center;
+  font-size: 55pt;
+  margin-top: 300px;
+}
+.description {
+  grid-column: 1 / 4;
+  grid-row: 2;
+  text-align: center;
+  font-size: 35pt;
+  margin: 0;
+}
+#form {
+  display: grid;
+  grid-column: 1 / 4;
+  grid-row: 3 / 6;
+}
+.name-input {
+  grid-column: 1 / 3;
+  grid-row: 3;
+  padding: 20px;
+  margin-bottom: 5px;
+  font-size: 30px;
+  border-radius: 10px;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+.submit-button {
+  grid-column: 3;
+  grid-row: 3;
+  padding: 20px;
+  margin-bottom: 5px;
+  font-size: 30px;
+  border-radius: 10px;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+#frogName {
+  background: #7a0037;
+  height: 90px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 65px;
+  color: #fae0e4;
+  grid-column: 1 / 4;
+  grid-row: 4;
+  border-radius: 10px;
+}
+.reset {
+  grid-column: 1 / 4;
+  grid-row: 5;
+  padding: 20px;
+  margin: 2px;
+  font-size: 30px;
+  border-radius: 10px;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
