@@ -6,6 +6,7 @@
 body, html {
   background: linear-gradient(#BD5863, 20%, #92A35A);
   min-height: 100vh;
+  min-width: 100vw;
   display: flex;
   justify-content: center;
 }
@@ -22,7 +23,7 @@ body, html {
   filter: drop-shadow(3px 3px 3px #000);
 }
 .title {
- font-size: 5vh;
+ font-size: 3rem;
  font-weight: lighter;
  color: #FFF;
  background: linear-gradient(#92A35A, 20%, #1A200F);
@@ -31,7 +32,7 @@ body, html {
  border: 1vh solid #92A35A;
 }
 .description {
-  font-size: 3vh;
+  font-size: 3rem;
   background: #92A35A;
   padding-bottom: 1vh;
   margin-bottom: 2vh;
@@ -47,14 +48,14 @@ body, html {
 .name-input {
   min-width: 60vw;
   min-height: 6vh;
-  font-size: 4vh;
+  font-size: 3rem;
   border: none;
   text-align: center;
 }
 .submit-button {
   min-width: 30vw;
   min-height: 4vh;
-  font-size: 2vh;
+  font-size: 2rem;
   border: none;
   background: #F9B989;
   filter: drop-shadow(3px 3px 3px #000);
@@ -67,7 +68,7 @@ body, html {
 .reset {
   min-width: 30vw;
   min-height: 4vh;
-  font-size: 2vh;
+  font-size: 2rem;
   border: none;
   background: #FC7860;
   filter: drop-shadow(3px 3px 3px #000);
@@ -84,7 +85,7 @@ body, html {
 }
 .frog-name {
  min-height: 13vh;
- font-size: 8vh;
+ font-size: 8rem;
  padding-top: 2vh;
  background: #000;
  color: #C1D3A4;
