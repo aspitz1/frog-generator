@@ -3,6 +3,7 @@ const frogType = ['Grumpy', 'Sticky', 'Dizzy', 'Fast', 'Melting', 'Shook', 'Love
 
 const form = document.querySelector('#form')
 const output = document.querySelector('#frogName')
+const button = document.querySelector('.rese')
 // gathers input and matches it to array index value based on the first letter of the name
 form.addEventListener('submit', function(event){
   event.preventDefault();

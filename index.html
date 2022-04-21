@@ -7,16 +7,25 @@
   </head>
   <body>
   <div class="container">
-    <head>
+  <head>
+    <div class="shadow">
+    <div class="center">
       <h1 class="title">What Frog are You?!</h1>
-      <p class="description">Let this gernerator tell you!</p>
-    </head>
-    <form id="form">
-      <input class="name-input" type="text" value="" placeholder="First Name" />
-      <button class="submit-button" type="submit">What's My FROG?</button>
-      <p id="frogName" class="frog-name"></p>
-      <button class="reset" type="reset">Try Another!</button>
-    </form>
+    </div>
+      <div class="center">
+        <p class="description">Let this generator tell you!</p>
+      </div>
+    </div>
+  </head>
+    <form id="form" class="input-button">
+        <input class="name-input" type="text" value="" placeholder="First Name" />
+        <button class="submit-button" type="submit">What's My FROG?</button>
+        <button class="reset" type="reset">Try Another!</button>
+      </form>
+  <div class="output">
+    <p id="frogName" class="frog-name"></p>
+    <img class="frog-img" src="#" alt="">
+  </div>
     <script src="script.js"></script>
   </div>
   </body>

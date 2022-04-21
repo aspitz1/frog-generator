@@ -1,73 +1,100 @@
 *, *::before, *::after {
   font-family: monospace;
+  margin: 0;
+  padding: 0;
 }
 body, html {
-  background: linear-gradient(#ff97c4, 20%, #b5e8a4);
+  background: linear-gradient(#BD5863, 20%, #92A35A);
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 .container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr);
-  grid-gap: 10px;
-  margin: 10px;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  margin: 0 2vw 0 2vw;
+}
+.center {
+  text-align: center;
+}
+.shadow {
+  filter: drop-shadow(3px 3px 3px #000);
 }
 .title {
-  grid-column: 1 / 4;
-  grid-row: 1;
-  text-align: center;
-  font-size: 55pt;
-  margin-top: 300px;
+ font-size: 5vh;
+ font-weight: lighter;
+ color: #FFF;
+ background: linear-gradient(#92A35A, 20%, #1A200F);
+ margin-top: 3vh;
+ padding: 1vh;
+ border: 1vh solid #92A35A;
 }
 .description {
-  grid-column: 1 / 4;
-  grid-row: 2;
-  text-align: center;
-  font-size: 35pt;
-  margin: 0;
+  font-size: 3vh;
+  background: #92A35A;
+  padding-bottom: 1vh;
+  margin-bottom: 2vh;
 }
-#form {
-  display: grid;
-  grid-column: 1 / 4;
-  grid-row: 3 / 6;
+
+.input-button {
+  background: #BD5863;
+  border: 1vh solid #BD5863;
+  margin-bottom: 2vh;
+  display: flex;
+  flex-direction: column;
 }
 .name-input {
-  grid-column: 1 / 3;
-  grid-row: 3;
-  padding: 20px;
-  margin-bottom: 5px;
-  font-size: 30px;
-  border-radius: 10px;
-  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  min-width: 60vw;
+  min-height: 6vh;
+  font-size: 4vh;
+  border: none;
+  text-align: center;
 }
 .submit-button {
-  grid-column: 3;
-  grid-row: 3;
-  padding: 20px;
-  margin-bottom: 5px;
-  font-size: 30px;
-  border-radius: 10px;
-  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  min-width: 30vw;
+  min-height: 4vh;
+  font-size: 2vh;
+  border: none;
+  background: #F9B989;
+  filter: drop-shadow(3px 3px 3px #000);
+  margin-bottom: 2px;
 }
-#frogName {
-  background: #7a0037;
-  height: 90px;
-  text-align: center;
-  font-weight: bold;
-  margin-top: 0;
-  margin-bottom: 5px;
-  font-size: 65px;
-  color: #fae0e4;
-  grid-column: 1 / 4;
-  grid-row: 4;
-  border-radius: 10px;
+.submit-button:hover {
+  cursor: pointer;
+  border: solid 2px #03B64D;
 }
 .reset {
-  grid-column: 1 / 4;
-  grid-row: 5;
-  padding: 20px;
-  margin: 2px;
-  font-size: 30px;
-  border-radius: 10px;
-  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  min-width: 30vw;
+  min-height: 4vh;
+  font-size: 2vh;
+  border: none;
+  background: #FC7860;
+  filter: drop-shadow(3px 3px 3px #000);
+}
+.reset:hover {
+  cursor: pointer;
+  border: solid 2px #03B64D;
+}
+.output {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: center;
+}
+.frog-name {
+ min-height: 13vh;
+ font-size: 8vh;
+ padding-top: 2vh;
+ background: #000;
+ color: #C1D3A4;
+ margin-bottom: 2vh;
+}
+.frog-img {
+  min-height: 30vh;
+  min-width: 30vh;
+  border: 1vh solid #BD5863;
+  align-self: end;
+  filter: drop-shadow(2px 2px 2px #000);
+  background: #92A35A;
 }
