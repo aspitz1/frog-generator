@@ -12,6 +12,7 @@ form.addEventListener('submit', function(event){
   const currentFrog = frogType[nameFirst.charCodeAt(0) - 65]
   output.textContent = `${currentFrog} Frog!`;
   img.src = `Frogs/${currentFrog.split(' ').join('-')}.jpg`;
+  img.alt = `A ${currentFrog} Frog!`
 })
 form.addEventListener('reset', function(event){
   output.textContent = '';
